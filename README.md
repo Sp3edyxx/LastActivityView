@@ -4,17 +4,6 @@ I've rebuild LastActivityView from Nirsoft from scratch and improve the overall 
 
 A NirSoft LastActivityView (v1.37) style list in black, with Sigcheck-style signature verification added. An In Instance / Unsigned filter bar replaces the menu bar and toolbar; the original's list view, Quick Filter, status bar and dialogs (Properties, Find, Choose Columns, Advanced Options) stay, with Signature and Signer columns. Native Rust + egui, one ~4 MB exe with no runtime and no install. The original is closed-source freeware, so there is no `legacy-*` folder; nothing of it is reused.
 
-## Build / run
-
-```
-cargo build --release
-target\release\LastActivityView.exe     # reads this PC (live only)
-```
-
-`cargo test --release` runs the unit tests (Prefetch v30 layout and renamed-image fallback, `.lnk` LinkInfo, shell item list checks, MRU order, path case / prefix handling, filter/sort, Quick Filter modes, selection, column order, every save format, file encodings) and two live tests: every `.pf` in `C:\Windows\Prefetch` decompresses and parses, and a full load streams rows without error.
-
-Run it as Administrator. Prefetch and BAM / DAM are admin-only. Without elevation the rest still loads, the status bar shows a red "⚠ Partial read" (click it to restart elevated) and the right-click menu gets a Run as Administrator item.
-
 ## Window
 
 - **Filter bar** (top): two toggle buttons that combine with each other and with Quick Filter.
