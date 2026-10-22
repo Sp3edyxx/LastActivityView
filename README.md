@@ -1,5 +1,5 @@
 # LastActivityView
-I've rebuild LastActivityView from Nirsoft from scratch and improve the overall application by adding a Signature checker. 
+I've rebuild LastActivityView from Nirsoft from scratch and improved the overall application by adding a Signature checker, and some more artifacts aswell as regedit keys known as "Run once keys". 
  LastActivityView
 
 A NirSoft LastActivityView (v1.37) style list in black, with Sigcheck-style signature verification added. An In Instance / Unsigned filter bar replaces the menu bar and toolbar; the original's list view, Quick Filter, status bar and dialogs (Properties, Find, Choose Columns, Advanced Options) stay, with Signature and Signer columns. Native Rust + egui, one ~4 MB exe with no runtime and no install. The original is closed-source freeware, so there is no `legacy-*` folder; nothing of it is reused.
